@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'At';
+  src: url('../fonts/Kingthings_Foundation.ttf');
+}
+@font-face {
+  font-family: 'Ot';
+  src: url('../fonts/SourceSansPro-Regular.otf');
+}
+body {
+  margin: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: url("../img/narbonne.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.content {
+  background-color: rgba(0,0,0,0.6);
+  box-shadow: 4px 4px 4px;
+  border-radius: 3px;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+.header {
+  margin-top: 1%;
+  background: url("../img/background.jpg") scroll no-repeat;
+  border-radius: 3px 3px 0px 0px;
+}
+* {
+  font-family: "Ot";
+}
+.h1 {
+  text-align: center;
+  font-size: 310%;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  font-family: "At";
+  margin: 5% auto;
+}
+.rules h2 {
+  font-size: 200%;
+  color: black;
+  font-family: "At";
+}
+.h3 {
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 150%;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  font-family: "At";
+}
+ul.topInfo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+ul.topInfo li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 3px;
+}
+ul.topInfo li {
+  float: left;
+  margin: 3%;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(80, 242, 88, 0.5);
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  border-radius: 3px 3px 0px 0px;
+}
+ul.topnav li {
+  float: left;
+}
+ul.topnav li.right {
+  float: right;
+}
+@media all and (max-width: 600px) {
+  ul.topnav li {
+    float: none;
+  }
+  body {
+    margin:0;
+  }
+  .header {
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .content {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {
+  background-color: rgba(255,255,255,0.2);
+}
+ul.topnav li a.active {
+  background-color: rgba(255,255,255,0.2);
+}
+.rules {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 3px;
+  padding-bottom: 5px;
+}
+.textimg{
+  display: flex;
+  justify-content: space-around;
+}
+.rules h1 {
+  font-family: "At";
+  padding: 8px 8px 0px 8px;
+  margin-bottom: 0px;
+}
+.rules p {
+  padding: 12px;
+}
+.rep{
+  display:flex;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+.rep li{
+  list-style-type: none;
+  margin: 0px;
+}
+.rep li input{
+  width:25px;
+  height:20px;
+  text-align: center;
+  padding-bottom: 4px;
+  font-size: 1em;
+}
+.valid{
+font-size: 1em;
+}
+#true{
+  display:none;
+  margin-top:0.3em;
+}
+#false{
+  display:none;
+  margin-top:0.3em;
+}
+.bouton{
+  text-align: center;
+  padding-top: 5%;
+}
+.Qand{
+  float:left;
+  margin-top: 5px;
+}
+.soluce{
+  background-color: white;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 0px 4px 0px 4px;
+}
+.clue{
+  color: red;
+}
+/*.vanish{
+  display: none;
+}*/
+.indices{
+  display: flex;
+  flex-wrap: wrap;
+}
+.imageIndice {
+  margin-top: 7%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.myFlex{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+}
+.imageEnigme {
+  width: 90%;
+  margin: 5%;
+}
+.myFlex > p{
+  align-items: flex-start;
+}
+.image {
+  width: 90%;
+  border-radius: 5px;
+}
+.reponse {
+  text-align: center;
+  padding-bottom: 5%;
+}
+.answer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+hr.style-eight { padding: 0; border: none; border-top: medium double #333; color: #333; text-align: center;
+}
+hr.style-eight:after { content: "§"; display: inline-block; position: relative; top: -0.7em; font-size: 1.5em; padding: 0 0.25em;
+}
+.contact h2{
+  padding-left: 2%;
+  margin: 5% auto;
+}
+.contact p{
+  font-size: 1em;
+}
+#map {
+  height: 400px;
+  width: 300px;
+}
+@media all and (max-width: 600px){
+.rule img{
+width: 400px;
+  }
+}
