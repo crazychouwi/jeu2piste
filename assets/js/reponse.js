@@ -57,7 +57,7 @@ $("#valid").click(function (){
   var numI = parseInt(nIndice.substring(nIndice.length - 1));
   console.log("nombre de l'indice:"+numI);
   console.log("reponse user: "+rep);
-  //comparaison de l'indice et envoi de du resultat===
+  //comparaison de l'indice et envoi du resultat===
   switch (numI) {
   case 1:
     console.log("cas 1");
