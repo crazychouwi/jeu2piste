@@ -127,7 +127,7 @@ ul.topnav li a.active {
   .textimg{
   display: flex;
   justify-content: space-around;
-  overflow:scroll;
+  overflow-y:scroll;
   max-height:150px;
 }
 .rules h1 {
