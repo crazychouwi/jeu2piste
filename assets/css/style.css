@@ -87,22 +87,6 @@ ul.topnav li {
 ul.topnav li.right {
   float: right;
 }
-@media all and (max-width: 600px) {
-  ul.topnav li {
-    float: none;
-  }
-  body {
-    margin:0;
-  }
-  .header {
-    margin-top: 0;
-    border-radius: 0;
-  }
-  .content {
-    margin-bottom: 0;
-    border-radius: 0;
-  }
-}
 ul.topnav li a {
   display: block;
   color: white;
@@ -127,7 +111,7 @@ ul.topnav li a.active {
   .textimg{
   display: flex;
   justify-content: space-around;
-  overflow-y:scroll;
+  overflow-y:auto;
   max-height:150px;
 }
 .rules h1 {
@@ -156,6 +140,7 @@ ul.topnav li a.active {
 }
 .valid{
 font-size: 1em;
+width: 7em;
 }
 #true{
   display:none;
@@ -235,8 +220,22 @@ hr.style-eight:after { content: "§"; display: inline-block; position: relative;
   height: 400px;
   width: 300px;
 }
-@media all and (max-width: 600px){
-.rule img{
-width: 400px;
+@media all and (max-width: 600px) {
+  ul.topnav li {
+    float: none;
+  }
+  body {
+    margin:0;
+  }
+  .header {
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .content {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .rule img{
+    width: 400px;
   }
 }
