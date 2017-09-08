@@ -1,4 +1,10 @@
   var infowindow = null;
+  var image = {
+    url: 'assets/img/navireRomain.png',
+    scaledSize: new google.maps.Size(50, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // ancho
+  };
 
   function AddMarker(locationMarker, titleString, contentString, map) {
       var marker = new google.maps.Marker({

@@ -16,7 +16,7 @@
         padding: 0;
       }
     </style>
-    <title></title>
+    <title>map</title>
   </head>
   <body>
     <div id="map"></div>
@@ -28,7 +28,7 @@
       var marker = new google.maps.Marker({
           position: locationMarker,
           map: map,
-          title: titleString
+          title: titleString,
       });
       google.maps.event.addListener(marker, 'click', function() {
           if (infowindow) {
@@ -45,14 +45,14 @@
 
   function initMap() {
       var narbonne = {lat: 43.18700000, lng: 3.0010000};
-      /*
+
       var image = {
         url: 'assets/img/navireRomain.png',
         scaledSize: new google.maps.Size(50, 50), // scaled size
         origin: new google.maps.Point(0,0), // origin
         anchor: new google.maps.Point(0, 0) // ancho
       };
-      */
+
       var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: narbonne

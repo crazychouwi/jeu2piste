@@ -100,15 +100,34 @@ ul.topnav li a:hover:not(.active) {
 ul.topnav li a.active {
   background-color: rgba(255,255,255,0.2);
 }
+.rule{
+  margin: 5%;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 3px;
+  padding: 5px;
+}
 .rules {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
+  margin-bottom: 5%;
   background-color: rgba(255,255,255,0.7);
   border-radius: 3px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
-  .textimg{
+.rulemap{
+  margin: 5%;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 3px;
+}
+.titremap{
+  text-align: center;
+}
+#map.accueilmap{
+  display: flex;
+  justify-content: center;
+}
+.textimg{
   display: flex;
   justify-content: space-around;
   overflow-y:auto;
@@ -151,8 +170,11 @@ width: 7em;
   margin-top:0.3em;
 }
 .bouton{
-  text-align: center;
-  padding-top: 5%;
+  /*text-align: center;
+  padding-top: 5%;*/
+  margin: 15px;
+  display: flex;
+  justify-content: center;
 }
 .Qand{
   float:left;
@@ -176,8 +198,8 @@ width: 7em;
   flex-wrap: wrap;
 }
 .imageIndice {
-  margin-top: 7%;
-  margin-bottom: 5%;
+  /*margin-top: 7%;
+  margin-bottom: 5%;*/
   text-align: center;
 }
 .myFlex{
@@ -238,4 +260,15 @@ hr.style-eight:after { content: "§"; display: inline-block; position: relative;
   .rule img{
     width: 400px;
   }
+}
+.aValid{
+  width: auto;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  height: 150px;
 }
