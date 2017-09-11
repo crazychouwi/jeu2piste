@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="slider2.css" />
+    <!-- <link rel="stylesheet" href="slider2.css" /> -->
   <title>Jeu Minstruis</title>
 </head>
 <body>
@@ -26,11 +26,13 @@
         </ul>
       </div>
     </header>
-    <div class="rule">
-      <h1>Règle du jeu:</h1>
-      <p>Ce jeu de piste invite à découvrir l'histoire et le patrimoine de Narbonne en six étapes.</p>
-      <p>Chacune d'entre elles vous apportera un élément de votre quête sous la forme de lettres mystères à repositionner dans l'ordre pour répondre à la question finale de la dernière page.</p>
+    <div class="rulemap">
+      <div class="titremap">
+        <h2>Le parcours</h2>
+      </div>
+      <div class="accueilmap" id="map"></div>
     </div>
+
     <div class="rule">
       <h1>Introduction :</h1>
       <p> En 1316, une série d’orages gonfla le lit audois qui trouva une autre embouchure dans un nouveau sillon. Il ne resta qu’un mince filet d’eau pour actionner les moulins des tanneurs.</p>
@@ -40,43 +42,25 @@
       <p>Narbonne ouvre alors de larges quais pour le commerce viticole et construit le long des immeubles bourgeois.</p>
       <p>D’une longueur de 38 km le canal de la Robine est une voie navigable de plaisance classée au patrimoine mondial de l’UNESCO, permettant de voguer dans le souvenir des navires romains.</p>
     </div>
-    <div class="rulemap">
-      <div class="titremap">
-        <h2>Le parcours</h2>
-      </div>
-      <div class="accueilmap" id="map"></div>
+    <div class="rule">
+      <h1>Règle du jeu:</h1>
+      <p>Ce jeu de piste invite à découvrir l'histoire et le patrimoine de Narbonne en six étapes.</p>
+      <p>Chacune d'entre elles vous apportera un élément de votre quête sous la forme de lettres mystères à repositionner dans l'ordre pour répondre à la question finale de la dernière page.</p>
     </div>
     <div class="bouton">
       <form>
         <input class="aValid" type="button" value="Débuter l'aventure" onclick="window.location.href='indice1.html'" />
       </form>
     </div>
+  <div id="slider">
+    <img class="mySlides" src="assets/img/abp.png" height="150px">
+    <img class="mySlides" src="assets/img/arche.jpg" height="150px">
+    <img class="mySlides" src="assets/img/campeole.jpg" height="150px">
+    <img class="mySlides" src="assets/img/mandela.jpg" height="150px">
+    <img class="mySlides" src="assets/img/mdp.png" height="150px" alt="">
   </div>
-  <div id="footer">
-    <div class='csslider1 autoplay '>
-      <input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
-      <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
-      <input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
-      <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
-      <input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
-      <ul>
-        <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
-          <img src="buns.jpg" style="width: 100%;">
-        </div>
-        <li class='num0 img'>
-           <img src='assets/img/curegourmande.jpg' alt='logoCure' title='chocolat' />
-        </li>
-        <li class='num1 img'>
-           <img src='assets/img/Chenil_Grand_Narbonne.png' alt='logoNarb' title='chenil' />
-        </li>
-        <li class='num2 img'>
-        <img src='assets/img/chimay.jpg' alt='chimay' title='chimay' />
-        </li>
-      </ul>
-    </div>
-  </div>
-
-
+</div>
+  <script src="assets/js/slider.js" type="text/javascript"></script>
   <script src="assets/js/jquery.js"type="text/javascript"></script>
   <script src="assets/js/reponse.js"type="text/javascript"></script>
   <script src="assets/js/carte.js"type="text/javascript"></script>

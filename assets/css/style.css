@@ -6,6 +6,9 @@
   font-family: 'Ot';
   src: url('../fonts/SourceSansPro-Regular.otf');
 }
+* {
+  font-family: "Ot";
+}
 body {
   margin: 0;
   margin-left: 15%;
@@ -25,9 +28,6 @@ body {
   margin-top: 1%;
   background: url("../img/background.jpg") scroll no-repeat;
   border-radius: 3px 3px 0px 0px;
-}
-* {
-  font-family: "Ot";
 }
 .h1 {
   text-align: center;
@@ -123,10 +123,6 @@ ul.topnav li a.active {
 .titremap{
   text-align: center;
 }
-#map.accueilmap{
-  display: flex;
-  justify-content: center;
-}
 .textimg{
   display: flex;
   justify-content: space-around;
@@ -160,14 +156,6 @@ ul.topnav li a.active {
 .valid{
 font-size: 1em;
 width: 7em;
-}
-#true{
-  display:none;
-  margin-top:0.3em;
-}
-#false{
-  display:none;
-  margin-top:0.3em;
 }
 .bouton{
   /*text-align: center;
@@ -238,6 +226,18 @@ hr.style-eight:after { content: "§"; display: inline-block; position: relative;
 .contact p{
   font-size: 1em;
 }
+#true{
+  display:none;
+  margin-top:0.3em;
+}
+#map.accueilmap{
+  display: flex;
+  justify-content: center;
+}
+#false{
+  display:none;
+  margin-top:0.3em;
+}
 #map {
   height: 400px;
   width: 300px;
@@ -266,9 +266,8 @@ hr.style-eight:after { content: "§"; display: inline-block; position: relative;
   font-size: 1.1em;
   font-weight: bold;
 }
-#footer{
-  position:fixed;
-  bottom:0;
-  left:0;
-  height: 150px;
+#slider{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
