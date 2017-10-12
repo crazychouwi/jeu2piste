@@ -123,12 +123,11 @@ ul.topnav li a.active {
 .titremap{
   text-align: center;
 }
-.textimg{
-  display: flex;
-  justify-content: space-around;
-  overflow-y:auto;
-  max-height:150px;
+/**/
+.but{
+  text-align: right;
 }
+/**/
 .rules h1 {
   font-family: "At";
   padding: 8px 8px 0px 8px;
@@ -186,9 +185,9 @@ width: 7em;
   flex-wrap: wrap;
 }
 .imageIndice {
-  /*margin-top: 7%;
-  margin-bottom: 5%;*/
-  text-align: center;
+margin: 0 auto;
+width: 60%;
+
 }
 .myFlex{
   display: flex;
@@ -198,13 +197,17 @@ width: 7em;
 .imageEnigme {
   width: 90%;
   margin: 5%;
+
 }
 .myFlex > p{
   align-items: flex-start;
 }
 .image {
-  width: 90%;
+  width: 100%;
   border-radius: 5px;
+}
+.image:hover{
+  transform:scale(1.5,1.5);
 }
 .reponse {
   text-align: center;
@@ -242,7 +245,7 @@ hr.style-eight:after { content: "§"; display: inline-block; position: relative;
   height: 400px;
   width: 300px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1200px) {
   ul.topnav li {
     float: none;
   }
@@ -257,8 +260,8 @@ hr.style-eight:after { content: "§"; display: inline-block; position: relative;
     margin-bottom: 0;
     border-radius: 0;
   }
-  .rule img{
-    width: 400px;
+  .rulemap img{
+    width: 90%;
   }
 }
 .aValid{

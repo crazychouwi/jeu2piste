@@ -16,30 +16,28 @@
         <li><a class="active" href="indice1.html"> Enigmes </a></li>
         <li><a href="contact.html"> Contact </a></li>
       </ul>
-      <h1 class="h1">5<sup>ème</sup> Enigme</h1>
-      <h3 class="h3">QUAI D'ALSACE</h3>
-      <!-- <div class="ah">
-        <ul class="topInfo">
-          <li class="distance"><p>Distance : 3km</p></li>
-          <li class="duree"><p>Durée : 1h30</p></li>
-          <li class="niveau"><p>Niveau : Moyen</p></li>
-        </ul>
-      </div> -->
     </header>
-    <div class="rules">
-      <div id="map"></div>
+    <div class="rulemap">
+      <div class="titremap">
+        <h1 class="h1">5<sup>ème</sup> Enigme</h1>
+        <h3 class="h3">QUAI D'ALSACE</h3>
+        <img src="assets/img/map5.png" alt="">
+      </div>
+    </div>
+    <div class="imageIndice">
+      <img class="image" src="assets/img/6_robine.jpg" alt="athena"/>
     </div>
     <div class="rules">
-    <h1></h1>
-<div class="textimg">
-      <p>Avant la IIème Guerre Mondiale, ces deux quais symbolisaient toute l'activité commerciale de la ville. Les péniches chargées de tonneaux assuraient un va et vient incessant entre les chais des négociants en vins et les péniches.
-      A la même époque, la concurrence du chemin de fer perturbe le trafic. Le canal connaîtra pourtant encore une activité, grâce à l’économie viticole en pleine prospérité. Entre 1872 et 1900, les projets les plus fous envisagent l’agrandissement du canal pour accueillir de très gros bateaux commerciaux.
-      Tous ces rêves échoueront, mais aujourd’hui, le tourisme fluvial redonne vie au canal de la Robine, classé au « Patrimoine mondial de l’humanité ».</p>
+    <div id="textimg">
+    Avant la IIème Guerre Mondiale, ces deux quais symbolisaient toute l'activité commerciale de la ville. Les péniches chargées de tonneaux assuraient un va et vient incessant entre les chais des négociants en vins et les péniches.
+    <div id="div-1" class="togglable" style="display:none">
+    A la même époque, la concurrence du chemin de fer perturbe le trafic. Le canal connaîtra pourtant encore une activité, grâce à l’économie viticole en pleine prospérité. Entre 1872 et 1900, les projets les plus fous envisagent l’agrandissement du canal pour accueillir de très gros bateaux commerciaux.
+    Tous ces rêves échoueront, mais aujourd’hui, le tourisme fluvial redonne vie au canal de la Robine, classé au « Patrimoine mondial de l’humanité ».
     </div>
-  </div>
-  <div class="imageIndice">
-    <img class="image" src="assets/img/6_robine.jpg" alt="athena"/>
-  </div>
+    <div class="but"><button class="toggle-button" data-target="#div-1">...lire la suite</button></div>
+    </div>
+    </div>
+
     <div class="rules">
       <div class="answer">
         <h1>Question :</h1>
@@ -84,6 +82,7 @@
   <script src="assets/js/jquery.js"type="text/javascript"></script>
   <script src="assets/js/reponse.js"type="text/javascript"></script>
   <script src="assets/js/carte.js"type="text/javascript"></script>
+  <script src="assets/js/divClick.js"type="text/javascript"></script>
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN3nhLGFS2al-DUObkMiBZ2IlRZEq9M9Y&callback=initMap"></script>
 </body>

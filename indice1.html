@@ -16,29 +16,25 @@
         <li><a class="active" href="indice1.html"> Enigmes </a></li>
         <li><a href="contact.html"> Contact </a></li>
       </ul>
-      <h1 class="h1">1<sup>ère</sup> Enigme</h1>
-      <h3 class="h3">QUAI VICTOR HUGO</h3>
-      <!-- <div class="ah">
-        <ul class="topInfo">
-          <li class="distance"><p>Distance : 3km</p></li>
-          <li class="duree"><p>Durée : 1h30</p></li>
-          <li class="niveau"><p>Niveau : Moyen</p></li>
-        </ul>
-      </div> -->
     </header>
-    <div class="rules">
-      <div id="map"></div>
+    <div class="rulemap">
+      <div class="titremap">
+        <h1 class="h1">1<sup>ère</sup> Enigme</h1>
+        <h3 class="h3">QUAI VICTOR HUGO</h3>
+        <img src="assets/img/map1.png" alt="">
+      </div>
     </div>
     <div class="imageIndice">
       <img class="image" src="assets/img/2_robineQuaiVictorHugo.jpg" alt="indice"/>
     </div>
     <div class="rules">
-    <h1></h1>
-      <div class="textimg">
-        <p class="test">Vers 1820, sous l’effet de la mévente du blé local, Narbonne renverse sa production pour culture du vin. Le vignoble passe de 10 000 hectares à la fin du XVIIIème siècle à 30 000 hectares en 1852 et 58000 hectares en 1873.
+      <div id="textimg">
+        Vers 1820, sous l’effet de la mévente du blé local, Narbonne renverse sa production pour culture du vin. Le vignoble passe de 10 000 hectares à la fin du XVIIIème siècle à 30 000 hectares en 1852 et 58000 hectares en 1873.
+      <div id="div-1" class="togglable" style="display:none">
         A la fin du XIXème siècle, Narbonne profite d’une forte expansion transformant son environnement urbain. Lors de la destruction des remparts, la ville s’agrandit et s’étale en aval de la Robine avec de riches édifices liés à l’âge d’or viticole. C’est à ce moment que naissent le quai Victor Hugo et le quai de Vallière.
         Mais la crise viticole annonce déjà le déclin de ces belles habitations remplacées une à une par des immeubles modernes.
-        </p>
+      </div>
+      <div class="but"><button class="toggle-button" data-target="#div-1">...lire la suite</button></div>
       </div>
     </div>
     <div class="rules">
@@ -87,6 +83,8 @@
   <script src="assets/js/jquery.js"type="text/javascript"></script>
   <script src="assets/js/reponse.js"type="text/javascript"></script>
   <script src="assets/js/carte.js"type="text/javascript"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script src="assets/js/divClick.js"type="text/javascript"></script>
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN3nhLGFS2al-DUObkMiBZ2IlRZEq9M9Y&callback=initMap"></script>
 </body>
