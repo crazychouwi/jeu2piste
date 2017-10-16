@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="slider2.css" />
   <title>Indice 4</title>
 </head>
-<body>
+<body onload="window.location.href = '#openModal';">
+  <div id="openModal" class="modalDialog">
+      <div id="bravo">
+          <a href="#close" title="Close" class="close"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="assets/img/close_pop.png" style="width:30px; height:30px"></a>
+          <h2>Félicitations!!!</h2>
+          <p>Vous avez trouvé</p>
+          <p>Passez à l'énigme suivante</p>
+      </div>
+  </div>
   <div class="content">
     <header class="">
       <ul class="topnav">
@@ -28,13 +36,13 @@
     <div class="imageIndice">
       <img class="image" src="assets/img/5_robineMédiathèque.png" alt="athena"/>
     </div>
-    <div class="rules">
+    <div class="rule">
     <div id="textimg">
     Toute la région de Narbonne est périodiquement menacée par de graves inondations causées par des pluies torrentielles dans le massif des Corbières qui gonflent en quelques heures toutes les rivières et canaux provoquant de gros dégâts dans les villes.
     <div id="div-1" class="togglable" style="display:none">
     La plus grosse crue connue à Narbonne date de 1889. Mais en hiver 2014 toute la plaine entourant Narbonne était sous les eaux pendant plusieurs jours.
     </div>
-    <div class="but"><button class="toggle-button" data-target="#div-1">...lire la suite</button></div>
+    <div class="but"><button class="toggle-button" data-target="#div-1">...lire +/-</button></div>
     </div>
     </div>
 
@@ -42,22 +50,13 @@
       <div class="answer">
         <h1>Question :</h1>
         <p> Comment s’appelle le programme mis en place contre les inondations dans l’Aude ?</p>
-      <ul  class="rep">
-        <li>
+        <p style="text-decoration:underline">Réponse:</p>
+      <div  class="rep">
           <input type="text" name="lettre1" class="case" placeholder="A" maxlength="1" size="1" id="1" onkeyup="Autotab(this, 2)">
-        </li>
-        <li>
           <input type="text" name="lettre2" class="case" placeholder="B" maxlength="1" size="1" id="2" onkeyup="Autotab(this, 3)">
-        </li>
-        <li>
-          <input type="text" name="lettre3" class="case" placeholder="C" maxlength="1" size="1" id="3"
-          onkeyup="Autotab(this, 4)">
-        </li>
-        <li>
+          <input type="text" name="lettre3" class="case" placeholder="C" maxlength="1" size="1" id="3" onkeyup="Autotab(this, 4)">
           <input type="text" name="lettre4" class="case" placeholder="D" maxlength="1" size="1" id="4">
-        </li>
-
-      </ul>
+      </div>
       <input type="button" name="valid4" value="Valider" class="valid" id="valid">
       <h1 id="true" class="hid">exact</h1>
       <h1 id="false" class="hid">faux</h1>

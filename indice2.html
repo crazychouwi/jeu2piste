@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="slider2.css" />
   <title>Indice 2</title>
 </head>
-<body>
+<body onload="window.location.href = '#openModal';">
+  <div id="openModal" class="modalDialog">
+      <div id="bravo">
+          <a href="#close" title="Close" class="close"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="assets/img/close_pop.png" style="width:30px; height:30px"></a>
+          <h2>Félicitations!!!</h2>
+          <p>Vous avez trouvé</p>
+          <p>Passez à l'énigme suivante</p>
+      </div>
+  </div>
+
   <div class="content">
     <header class="">
       <ul class="topnav">
@@ -27,7 +36,7 @@
     <div class="imageIndice">
       <img class="image" src="assets/img/3_robineQuaiMirabeau.JPG" alt="indice"/>
     </div>
-    <div class="rules">
+    <div class="rule">
       <div id="textimg">
         Au Moyen-âge, Narbonne se confine derrière une muraille et commerce avec l’extérieur par ses quais, artère économique et vivante.
         <div id="div-1" class="togglable" style="display:none">
@@ -35,32 +44,21 @@
         Sur cette rive se situait le port fluvial de Narbonne.
         À la fin du XVIIème siècle, quand le trafic portuaire périclite, la rive gauche est transformée en promenade, celle de droite garda son activité économique grâce au grenier à sel situé de ce côté-là depuis remplacé par les Halles.</p>
         </div>
-        <div class="but"><button class="toggle-button" data-target="#div-1">...lire la suite</button></div>
+        <div class="but"><button class="toggle-button" data-target="#div-1">...lire +/-</button></div>
     </div>
   </div>
     <div class="rules">
       <div class="answer">
         <h1>Question :</h1>
         <p> Grâce à l’intervention de Monseigneur DILLON, archevêque de Narbonne, les États de Languedoc décidèrent d’unir la Robine au canal du Midi par la création du canal de Jonction. Ce buste réalisé par Maurice Gril commémore le bicentenaire des travaux sous quel maire ?</p>
-      <ul  class="rep">
-        <li>
+        <p style="text-decoration:underline">Réponse:</p>
+      <div  class="rep">
           <input type="text" name="lettre2" class="case" placeholder="A" maxlength="1" size="1" id="1" onkeyup="Autotab(this, 2)">
-        </li>
-        <li>
           <input type="text" name="lettre3" class="case" placeholder="B" maxlength="1" size="1" id="2" onkeyup="Autotab(this, 3)">
-        </li>
-        <li>
-          <input type="text" name="lettre4" class="case" placeholder="C" maxlength="1" size="1" id="3"
-          onkeyup="Autotab(this, 4)">
-        </li>
-        <li>
-          <input type="text" name="lettre5" class="case" placeholder="D" maxlength="1" size="1" id="4"
-          onkeyup="Autotab(this, 5)">
-        </li>
-        <li>
+          <input type="text" name="lettre4" class="case" placeholder="C" maxlength="1" size="1" id="3" onkeyup="Autotab(this, 4)">
+          <input type="text" name="lettre5" class="case" placeholder="D" maxlength="1" size="1" id="4" onkeyup="Autotab(this, 5)">
           <input type="text" name="lettre1" class="case" placeholder="E" maxlength="1" size="1" id="5">
-        </li>
-      </ul>
+      </div>
       <input type="button" name="valid2" value="Valider" class="valid" id="valid">
       <h1 id="true" class="hid">exact</h1>
       <h1 id="false" class="hid">faux</h1>
@@ -79,6 +77,7 @@
   <script src="assets/js/reponse.js"type="text/javascript"></script>
   <script src="assets/js/carte.js"type="text/javascript"></script>
   <script src="assets/js/divClick.js"type="text/javascript"></script>
+  <script src="assets/js/formcontact.js"type="text/javascript"></script>
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN3nhLGFS2al-DUObkMiBZ2IlRZEq9M9Y&callback=initMap"></script>
 </body>

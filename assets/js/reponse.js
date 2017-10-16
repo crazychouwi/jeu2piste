@@ -25,7 +25,7 @@ function resultat(indice, rep, numIndice){
   if(rep.toLowerCase()=== indice){
     $(".case").css("color","#09cb09");
     $(".case").css("font-weight","bold");
-    window.location.href = "./indice"+numIndice+".html"
+    window.location.href = "./indice"+numIndice+".html";
     // window.open("./indice"+numIndice+".html")
   }else{
     $(".case").css("color","red");

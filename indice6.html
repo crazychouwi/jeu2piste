@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="slider2.css" />
   <title>Document 6</title>
 </head>
-<body>
+<body onload="window.location.href = '#openModal';">
+  <div id="openModal" class="modalDialog">
+      <div id="bravo">
+          <a href="#close" title="Close" class="close"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="assets/img/close_pop.png" style="width:30px; height:30px"></a>
+          <h2>Félicitations!!!</h2>
+          <p>Vous avez trouvé</p>
+          <p>Passez à l'énigme suivante</p>
+      </div>
+  </div>
   <div class="content">
     <header class="">
       <ul class="topnav">
@@ -16,7 +24,6 @@
         <li><a class="active" href="indice1.html"> Enigmes </a></li>
         <li><a href="contact.html"> Contact </a></li>
       </ul>
-
     </header>
     <div class="rulemap">
       <div class="titremap">
@@ -28,54 +35,31 @@
     <div class="imageIndice">
       <img class="image" src="assets/img/7_robineMoulinDuGua.jpg" alt="athena"/>
     </div>
-    <div class="rules">
+    <div class="rule">
     <div id="textimg">
       Le mot « gua » en langue d’oc désigne un gué. Ici se situait le passage primitif permettant à la piste antique de traverser l’Aude à proximité d’oppidum, berceau de la Ville.
       <div id="div-1" class="togglable" style="display:none">
       La construction de la voie domitienne dès l’implantation romaine et la fondation de Narbo-Martius en 118 av. J.C. a remplacé le gué par le pont des marchands en aval. Quelques siècles plus tard on y construisit un moulin pour profiter de la force motrice de l’eau. Ce bâtiment réaménagé est aujourd’hui un charmant restaurant bordé par une écluse.</div>
-      <div class="but"><button class="toggle-button" data-target="#div-1">...lire la suite</button></div>
+      <div class="but"><button class="toggle-button" data-target="#div-1">...lire +/-</button></div>
     </div>
     </div>
     <div class="rules">
       <div class="answer">
         <h1>Question :</h1>
         <p> Quelle voie romaine perpendiculaire au canal fit perdre au gué son importance ?</p>
-      <ul  class="rep">
-        <li>
+        <p style="text-decoration:underline">Réponse:</p>
+      <div  class="rep">
           <input type="text" name="lettre1" class="case" placeholder="A" maxlength="1" size="1" id="1" onkeyup="Autotab(this, 2)">
-        </li>
-        <li>
           <input type="text" name="lettre2" class="case" placeholder="B" maxlength="1" size="1" id="2" onkeyup="Autotab(this, 3)">
-        </li>
-        <li>
-          <input type="text" name="lettre3" class="case" placeholder="C" maxlength="1" size="1" id="3"
-          onkeyup="Autotab(this, 4)">
-        </li>
-        <li>
-          <input type="text" name="lettre4" class="case" placeholder="D" maxlength="1" size="1" id="4"
-          onkeyup="Autotab(this, 5)">
-        </li>
-        <li>
+          <input type="text" name="lettre3" class="case" placeholder="C" maxlength="1" size="1" id="3" onkeyup="Autotab(this, 4)">
+          <input type="text" name="lettre4" class="case" placeholder="D" maxlength="1" size="1" id="4" onkeyup="Autotab(this, 5)">
           <input type="text" name="lettre5" class="case" placeholder="E" maxlength="1" size="1" id="5" onkeyup="Autotab(this, 6)">
-        </li>
-        <li>
           <input type="text" name="lettre6" class="case" placeholder="F" maxlength="1" size="1" id="6" onkeyup="Autotab(this, 7)">
-        </li>
-        <li>
-          <input type="text" name="lettre7" class="case" placeholder="G" maxlength="1" size="1" id="7"
-          onkeyup="Autotab(this, 8)">
-        </li>
-        <li>
+          <input type="text" name="lettre7" class="case" placeholder="G" maxlength="1" size="1" id="7" onkeyup="Autotab(this, 8)">
           <input type="text" name="lettre8" class="case" placeholder="E" maxlength="1" size="1" id="8" onkeyup="Autotab(this, 9)">
-        </li>
-        <li>
-          <input type="text" name="lettre9" class="case" placeholder="F" maxlength="1" size="1" id="9"
-          onkeyup="Autotab(this, 10)">
-        </li>
-        <li>
+          <input type="text" name="lettre9" class="case" placeholder="F" maxlength="1" size="1" id="9" onkeyup="Autotab(this, 10)">
           <input type="text" name="lettre10" class="case" placeholder="G" maxlength="1" size="1" id="10">
-        </li>
-      </ul>
+      </div>
       <input type="button" name="valid6" value="Valider" class="valid" id="valid">
       <h1 id="true" class="hid">exact</h1>
       <h1 id="false" class="hid">faux</h1>

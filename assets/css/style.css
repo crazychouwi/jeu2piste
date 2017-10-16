@@ -106,14 +106,13 @@ ul.topnav li a.active {
   border-radius: 3px;
   padding: 5px;
 }
-.rules {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+.rules{
+  margin: 5%;
   background-color: rgba(255,255,255,0.7);
   border-radius: 3px;
   padding: 5px;
+  text-align: center;
+
 }
 .rulemap{
   margin: 5%;
@@ -136,17 +135,22 @@ ul.topnav li a.active {
 .rules p {
   padding: 12px;
 }
+.fin{
+  width: 100%;
+  text-align: center;
+}
 .rep{
-  display:flex;
-  padding: 0px;
-  flex-wrap: wrap;
+  /*padding: 0px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top:15px;
+  margin-bottom: 15px;
 }
-.rep li{
-  list-style-type: none;
-  margin: 0px;
-}
-.rep li input{
-  width:23px;
+.rep input{
+  display: flex;
+  flex-wrap: nowrap;
+  width:20px;
   height:20px;
   text-align: center;
   padding-bottom: 4px;
@@ -163,10 +167,6 @@ width: 7em;
   display: flex;
   justify-content: center;
 }
-.Qand{
-  float:left;
-  margin-top: 5px;
-}
 .soluce{
   background-color: white;
   font-size: 1.2em;
@@ -177,17 +177,14 @@ width: 7em;
 .clue{
   color: red;
 }
-/*.vanish{
-  display: none;
-}*/
 .indices{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .imageIndice {
 margin: 0 auto;
 width: 60%;
-
 }
 .myFlex{
   display: flex;
@@ -197,7 +194,6 @@ width: 60%;
 .imageEnigme {
   width: 90%;
   margin: 5%;
-
 }
 .myFlex > p{
   align-items: flex-start;
@@ -212,11 +208,6 @@ width: 60%;
 .reponse {
   text-align: center;
   padding-bottom: 5%;
-}
-.answer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 hr.style-eight { padding: 0; border: none; border-top: medium double #333; color: #333; text-align: center;
 }
@@ -263,6 +254,9 @@ hr.style-eight:after { content: "§"; display: inline-block; position: relative;
   .rulemap img{
     width: 90%;
   }
+  .rep{
+    width: 100%;
+  }
 }
 .aValid{
   width: auto;
@@ -274,3 +268,43 @@ hr.style-eight:after { content: "§"; display: inline-block; position: relative;
   display: flex;
   justify-content: center;
 }
+/*fenetre modale de felicitation*/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 250px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    /*background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);*/
+    background-image: url('../img/artifice.gif');
+    background-repeat: no-repeat;
+}
+img.btn_close {
+    float: right;
+    margin: -12px -25px 0 0;
+}
+/*fenetre modale de felicitation*/

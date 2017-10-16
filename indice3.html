@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="slider2.css" />
   <title>Indice 3</title>
 </head>
-<body>
+<body onload="window.location.href = '#openModal';">
+  <div id="openModal" class="modalDialog">
+      <div id="bravo">
+          <a href="#close" title="Close" class="close"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="assets/img/close_pop.png" style="width:30px; height:30px"></a>
+          <h2>Félicitations!!!</h2>
+          <p>Vous avez trouvé</p>
+          <p>Passez à l'énigme suivante</p>
+      </div>
+  </div>
   <div class="content">
     <header class="">
       <ul class="topnav">
@@ -27,38 +35,28 @@
     <div class="imageIndice">
       <img class="image" src="assets/img/4_robineEcluse.jpg" alt="indice"/>
     </div>
-    <div class="rules">
+    <div class="rule">
     <div id="textimg">
       Appelé aujourd’hui rue Jean Jaurès, l’ancienne rue Entre deux villes était sans doute la rue la plus vivante de Narbonne.
+      On y trouvait un très grand moulin qui abrite maintenant l’Office de tourisme.
       <div id="div-1" class="togglable" style="display:none">
-      On y trouvait un très grand moulin qui abrite maintenant l’Office de tourisme. Il y avait aussi un bateau lavoir sur lequel les lavandières lavaient le linge. De récentes fouilles sous l’eau ont aussi dévoilé la présence de pieux en bois et de très nombreuses poteries marquant probablement la présence d’un port moyen-âgeux. L’écluse plus récente témoigne aussi de cet emplacement stratégique en ville sur le lit de la Robine.
+      Il y avait aussi un bateau lavoir sur lequel les lavandières lavaient le linge. De récentes fouilles sous l’eau ont aussi dévoilé la présence de pieux en bois et de très nombreuses poteries marquant probablement la présence d’un port moyen-âgeux. L’écluse plus récente témoigne aussi de cet emplacement stratégique en ville sur le lit de la Robine.
     </div>
-    <div class="but"><button class="toggle-button" data-target="#div-1">...lire la suite</button></div>
+    <div class="but"><button class="toggle-button" data-target="#div-1">...lire +/-</button></div>
   </div>
 </div>
     <div class="rules">
       <div class="answer">
         <h1>Question :</h1>
         <p> Le parking de la capitainerie est décoré de plusieurs fresques évoquant l’eau. Sous quelle forme se trouve-t-elle entre la fontaine et la vague ?</p>
-      <ul  class="rep">
-        <li>
+        <p style="text-decoration:underline">Réponse:</p>
+      <div  class="rep">
           <input type="text" name="lettre2" class="case" placeholder="A" maxlength="1" size="1" id="1" onkeyup="Autotab(this, 2)">
-        </li>
-        <li>
           <input type="text" name="lettre3" class="case" placeholder="B" maxlength="1" size="1" id="2" onkeyup="Autotab(this, 3)">
-        </li>
-        <li>
-          <input type="text" name="lettre4" class="case" placeholder="C" maxlength="1" size="1" id="3"
-          onkeyup="Autotab(this, 4)">
-        </li>
-        <li>
-          <input type="text" name="lettre5" class="case" placeholder="D" maxlength="1" size="1" id="4"
-          onkeyup="Autotab(this, 5)">
-        </li>
-        <li>
+          <input type="text" name="lettre4" class="case" placeholder="C" maxlength="1" size="1" id="3" onkeyup="Autotab(this, 4)">
+          <input type="text" name="lettre5" class="case" placeholder="D" maxlength="1" size="1" id="4" onkeyup="Autotab(this, 5)">
           <input type="text" name="lettre1" class="case" placeholder="E" maxlength="1" size="1" id="5">
-        </li>
-      </ul>
+      </div>
       <input type="button" name="valid3" value="Valider" class="valid" id="valid">
       <h1 id="true" class="hid">exact</h1>
       <h1 id="false" class="hid">faux</h1>

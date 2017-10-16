@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="slider2.css" />
   <title>Enigme finale</title>
 </head>
-<body>
+<body onload="window.location.href = '#openModal';">
+  <div id="openModal" class="modalDialog">
+      <div id="bravo">
+          <a href="#close" title="Close" class="close"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="assets/img/close_pop.png" style="width:30px; height:30px"></a>
+          <h2>Félicitations!!!</h2>
+          <p>Vous avez trouvé</p>
+          <p>Dernière énigme</p>
+      </div>
+  </div>
   <div class="content">
     <header class="">
       <ul class="topnav">
@@ -40,86 +48,37 @@
 
             <span class="soluce vanish" id="indice3">O<span class="clue">C</span>EA<span class="clue">N</span></span>
 
-            <span class="soluce vanish" id="indice4"><span class="clue">A</span>PI</span>
+            <span class="soluce vanish" id="indice4">P<span class="clue">A</span>PI</span>
 
             <span class="soluce vanish" id="indice5">GU<span class="clue">I</span>LL<span class="clue">E</span></span>
 
             <span class="soluce vanish" id="indice6"><span class="clue">D</span>OMI<span class="clue">T</span>IENNE</span>
         </div>
-      <ul  class="rep">
-        <li>
-          <input type="text" name="lettre1" class="case" placeholder="T" maxlength="1" size="1" id="1" onkeyup="Autotab(this, 2)">
-        </li>
-        <li>
-          <input type="text" name="lettre2" class="case" placeholder="_" maxlength="1" size="1" id="2" onkeyup="Autotab(this, 3)">
-        </li>
-        <li>
-          <input type="text" name="lettre3" class="case" placeholder="_" maxlength="1" size="1" id="3"
-          onkeyup="Autotab(this, 4)">
-        </li>
-        <li>
-          <input type="text" name="lettre4" class="case" placeholder="H" maxlength="1" size="1" id="4"
-          onkeyup="Autotab(this, 5)">
-        </li>
-        <li>
-          <input type="text" name="lettre5" class="case" placeholder="_" maxlength="1" size="1" id="5" onkeyup="Autotab(this, 6)">
-        </li>
-        <li>
-          <input type="text" name="lettre6" class="case" placeholder="N" maxlength="1" size="1" id="6" onkeyup="Autotab(this, 7)">
-        </li>
-        <li><i class="Qand">&nbsp; &#38; &nbsp;</i></li>
-        <li>
-          <input type="text" name="lettre7" class="case" placeholder="E" maxlength="1" size="1" id="7"
-          onkeyup="Autotab(this, 8)">
-        </li>
-        <li>
-          <input type="text" name="lettre8" class="case" placeholder="_" maxlength="1" size="1" id="8" onkeyup="Autotab(this, 9)">
-        </li>
-        <li>
-          <input type="text" name="lettre9" class="case" placeholder="H" maxlength="1" size="1" id="9"
-          onkeyup="Autotab(this, 10)">
-        </li>
-        <li>
-          <input type="text" name="lettre10" class="case" placeholder="_" maxlength="1" size="1" id="10" onkeyup="Autotab(this, 11)">
-        </li>
-        <li>
-          <input type="text" name="lettre11" class="case" placeholder="_" maxlength="1" size="1" id="11"
-          onkeyup="Autotab(this, 12)">
-        </li>
-        <li>
-          <input type="text" name="lettre12" class="case" placeholder="N" maxlength="1" size="1" id="12" onkeyup="Autotab(this, 13)">
-        </li>
-        <li>
-          <input type="text" name="lettre13" class="case" placeholder="A" maxlength="1" size="1" id="13">
-        </li>
-      </ul>
+        <div>
+      <div  class="fin">
+        <div class="rep">
+        <input type="text" name="lettre1" class="case" placeholder="T" maxlength="1" size="1" id="1" onkeyup="Autotab(this, 2)">
+        <input type="text" name="lettre2" class="case" placeholder="_" maxlength="1" size="1" id="2" onkeyup="Autotab(this, 3)">
+        <input type="text" name="lettre3" class="case" placeholder="_" maxlength="1" size="1" id="3"onkeyup="Autotab(this, 4)">
+        <input type="text" name="lettre4" class="case" placeholder="H" maxlength="1" size="1" id="4"onkeyup="Autotab(this, 5)">
+        <input type="text" name="lettre5" class="case" placeholder="_" maxlength="1" size="1" id="5" onkeyup="Autotab(this, 6)">
+        <input type="text" name="lettre6" class="case" placeholder="N" maxlength="1" size="1" id="6" onkeyup="Autotab(this, 7)">
+        </div>
+        <i>&nbsp; &#38; &nbsp;</i>
+        <div class="rep">
+        <input type="text" name="lettre7" class="case" placeholder="E" maxlength="1" size="1" id="7" onkeyup="Autotab(this, 8)">
+        <input type="text" name="lettre8" class="case" placeholder="_" maxlength="1" size="1" id="8" onkeyup="Autotab(this, 9)">
+        <input type="text" name="lettre9" class="case" placeholder="H" maxlength="1" size="1" id="9" onkeyup="Autotab(this, 10)">
+        <input type="text" name="lettre10" class="case" placeholder="_" maxlength="1" size="1" id="10" onkeyup="Autotab(this, 11)">
+        <input type="text" name="lettre11" class="case" placeholder="_" maxlength="1" size="1" id="11" onkeyup="Autotab(this, 12)">
+        <input type="text" name="lettre12" class="case" placeholder="N" maxlength="1" size="1" id="12" onkeyup="Autotab(this, 13)">
+        <input type="text" name="lettre13" class="case" placeholder="A" maxlength="1" size="1" id="13"></li>
+        </div>
+      </div>
       <input type="button" name="valid7" value="Valider" class="valid" id="valid">
       <h1 id="true" class="hid">exact</h1>
       <h1 id="false" class="hid">faux</h1>
-      </div>
     </div>
-
-  </div>
-  <div class='csslider1 autoplay '>
-    <input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
-    <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
-    <input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
-    <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
-    <input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
-    <ul>
-      <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
-        <img src="buns.jpg" style="width: 100%;">
-      </div>
-      <li class='num0 img'>
-         <img src='assets/img/curegourmande.jpg' alt='logoCure' title='cg' /> </a>
-      </li>
-      <li class='num1 img'>
-         <img src='assets/img/Chenil_Grand_Narbonne.png' alt='logoNarb' title='esthe' /> </a>
-      </li>
-      <li class='num2 img'>
-      <img src='assets/img/chimay.jpg' alt='chimay' title='chimay' /> </a>
-      </li>
-    </ul>
   </div>
   <script src="assets/js/jquery.js"type="text/javascript"></script>
   <script src="assets/js/reponse.js"type="text/javascript"></script>

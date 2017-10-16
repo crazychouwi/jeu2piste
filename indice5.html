@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="slider2.css" />
   <title>Indice 5</title>
 </head>
-<body>
+<body onload="window.location.href = '#openModal';">
+  <div id="openModal" class="modalDialog">
+      <div id="bravo">
+          <a href="#close" title="Close" class="close"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="assets/img/close_pop.png" style="width:30px; height:30px"></a>
+          <h2>Félicitations!!!</h2>
+          <p>Vous avez trouvé</p>
+          <p>Passez à l'énigme suivante</p>
+      </div>
+  </div>
   <div class="content">
     <header class="">
       <ul class="topnav">
@@ -27,14 +35,14 @@
     <div class="imageIndice">
       <img class="image" src="assets/img/6_robine.jpg" alt="athena"/>
     </div>
-    <div class="rules">
+    <div class="rule">
     <div id="textimg">
     Avant la IIème Guerre Mondiale, ces deux quais symbolisaient toute l'activité commerciale de la ville. Les péniches chargées de tonneaux assuraient un va et vient incessant entre les chais des négociants en vins et les péniches.
     <div id="div-1" class="togglable" style="display:none">
     A la même époque, la concurrence du chemin de fer perturbe le trafic. Le canal connaîtra pourtant encore une activité, grâce à l’économie viticole en pleine prospérité. Entre 1872 et 1900, les projets les plus fous envisagent l’agrandissement du canal pour accueillir de très gros bateaux commerciaux.
     Tous ces rêves échoueront, mais aujourd’hui, le tourisme fluvial redonne vie au canal de la Robine, classé au « Patrimoine mondial de l’humanité ».
     </div>
-    <div class="but"><button class="toggle-button" data-target="#div-1">...lire la suite</button></div>
+    <div class="but"><button class="toggle-button" data-target="#div-1">...lire +/-</button></div>
     </div>
     </div>
 
@@ -43,28 +51,15 @@
         <h1>Question :</h1>
         <p> Fondée en 1885, cette société transmet de père en fils un savoir-faire en rapport avec la valorisation du bois utilisé d’abord pour la fabrication de tonneaux.
         Comment s’appelle-t-elle ?</p>
-      <ul  class="rep">
-        <li>
+        <p style="text-decoration:underline">Réponse:</p>
+      <div  class="rep">
           <input type="text" name="lettre1" class="case" placeholder="A" maxlength="1" size="1" id="1" onkeyup="Autotab(this, 2)">
-        </li>
-        <li>
           <input type="text" name="lettre2" class="case" placeholder="B" maxlength="1" size="1" id="2" onkeyup="Autotab(this, 3)">
-        </li>
-        <li>
-          <input type="text" name="lettre3" class="case" placeholder="C" maxlength="1" size="1" id="3"
-          onkeyup="Autotab(this, 4)">
-        </li>
-        <li>
-          <input type="text" name="lettre4" class="case" placeholder="D" maxlength="1" size="1" id="4"
-          onkeyup="Autotab(this, 5)">
-        </li>
-        <li>
+          <input type="text" name="lettre3" class="case" placeholder="C" maxlength="1" size="1" id="3" onkeyup="Autotab(this, 4)">
+          <input type="text" name="lettre4" class="case" placeholder="D" maxlength="1" size="1" id="4" onkeyup="Autotab(this, 5)">
           <input type="text" name="lettre5" class="case" placeholder="E" maxlength="1" size="1" id="5" onkeyup="Autotab(this, 6)">
-        </li>
-        <li>
           <input type="text" name="lettre6" class="case" placeholder="F" maxlength="1" size="1" id="6">
-        </li>
-      </ul>
+        </div>
       <input type="button" name="valid5" value="Valider" class="valid" id="valid">
       <h1 id="true" class="hid">exact</h1>
       <h1 id="false" class="hid">faux</h1>
